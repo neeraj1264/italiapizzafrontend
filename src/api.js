@@ -1,4 +1,4 @@
-export const BASE_URL = "https://italia-pizza-backend.vercel.app/api";
+export const BASE_URL = "https://backend-virid-theta-23.vercel.app/api";
 // export const BASE_URL = "https://invoice-backend-7czy.vercel.app/api";
 
 export const fetchCategories = async () => {

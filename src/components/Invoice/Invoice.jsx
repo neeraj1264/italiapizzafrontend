@@ -24,7 +24,7 @@ const Invoice = () => {
   const [loading, setLoading] = useState(true);
   const [isCategoryVisible, setIsCategoryVisible] = useState(false);
   const [activeCategory, setActiveCategory] = useState("");
-  const [includeGST, setIncludeGST] = useState(true);
+  const [includeGST, setIncludeGST] = useState(false);
 
   const [now, setNow] = useState(Date.now());
 
@@ -616,7 +616,7 @@ useEffect(() => {
                   <hr className="hr" style={{ marginBottom: "1rem" }} />
                 </ul>
 
-                <div className="checkbox-gst-container">
+                {/* <div className="checkbox-gst-container">
                   <input
                     type="checkbox"
                     checked={includeGST}
@@ -625,7 +625,7 @@ useEffect(() => {
                   <label style={{ marginLeft: ".5rem" }}>
                     Include GST (5%)
                   </label>
-                </div>
+                </div> */}
                
                  {localStorage.getItem("printerType") === "usb" ? (
                               <UsbPrint
